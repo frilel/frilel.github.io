@@ -19,6 +19,7 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+	--widthSubtraction: 25em;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -100,7 +101,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #281533;
+		background-color: #000000;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -145,7 +146,7 @@ input, select, textarea {
 		}
 
 	body {
-		color: #1a0527;
+		color: #000000;
 	}
 
 	body, input, select, textarea {
@@ -3337,9 +3338,12 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
-			color: #ffffff; /* headings color */
+		#intro h1 {
+			color: #fafad2; /* headings color */
 
+		}
+		#intro h2, #intro h3, #intro h4, #intro h5, #intro h6{
+			color: #b8b895;
 		}
 
 		#intro blockquote {
@@ -3629,7 +3633,7 @@ input, select, textarea {
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
-		width: calc(100% - 4rem);
+		width: calc(100% - var(--widthSubtraction));
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3766,7 +3770,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
+		width: calc(100% - var(--widthSubtraction));
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3793,14 +3797,19 @@ input, select, textarea {
 				margin-top: -2rem;
 			}
 
-			#main > .post header.major > h1, #main > .post header.major h2 {
+			#main > .post header.major > h1{
 				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
+			#main > .post header.major h2 {
+				font-size: 2rem;
+				margin: 0 0 0 0;
+			}
 
 			#main > .post.featured {
 				text-align: center;
+				font-weight: bold;
 			}
 
 			@media screen and (max-width: 1280px) {
@@ -3965,7 +3974,7 @@ input, select, textarea {
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
+		width: calc(100% - var(--widthSubtraction));
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -4402,7 +4411,7 @@ input, select, textarea {
 		text-align: center;
 		text-transform: uppercase;
 		margin: 4rem auto 8rem auto;
-		width: calc(100% - 4rem);
+		width: calc(100% - var(--widthSubtraction));
 		max-width: 72rem;
 		z-index: 2;
 	}
