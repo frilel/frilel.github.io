@@ -118,7 +118,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 14pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -153,7 +153,7 @@ input, select, textarea {
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
-		line-height: 2.375;
+		line-height: 1.75;
 	}
 
 	a {
