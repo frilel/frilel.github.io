@@ -2981,6 +2981,7 @@ input, select, textarea {
 				header.major > .date:after {
 					right: 0;
 				}
+
 		header.minor {
 			margin: 0 0 0 0;
 			text-align: left;
@@ -3780,7 +3781,7 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 8rem 8rem 4rem 8rem ;
+			padding: 4rem 4rem 4rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
