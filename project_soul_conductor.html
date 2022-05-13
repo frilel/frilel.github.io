@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Mobile game Soul Conductor</title>
+		<title>Mobile Game Soul Conductor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -45,7 +45,7 @@
 							<section class="post">
 								<header class="major">
 									<h1>Soul Conductor</h1>
-									<p>Mobile Rythm Game</p>
+									<p>Mobile Game Development - bachelor's course - Graded A</p>
                                 </header>
 
                                 <div style="text-align: center;">
@@ -63,9 +63,9 @@
 										<h3>Engine</h3>
 										<p>Unity</p>
 										<h3>Tools used</h3>
-										<p>Unity's C# scripting, particle system, input system, Photoshop.</p>
+										<p>Unity's C# scripting, particle system, new input system, Photoshop, Trello, Discord.</p>
 										<h3>Duration</h3>
-										<p>2 months</p>
+										<p>9 weeks</p>
 										<h3>Team Size</h3>
 										<p>5</p>
 										<h3>Roles</h3>
@@ -76,11 +76,12 @@
 										<!-- TODO: Add more details about my work -->
 										<h2>The game</h2>
 										<p>
-											Soul Conductor is a rather unique rhythm game that was intended to have a captivating story and eventful gameplay. 
-                                            The gameplay is rather interesting and fun, but we did not have time to develop any sort of story.
-                                            The player is a "soul conductor" meant to guide captured souls to freedom. 
+											Soul Conductor is probably a rather unique rhythm game that was aiming to mix the rythm game genre with 'Fruit Ninja'. 
+                                            The player is a forest being called "soul conductor", meant to guide captured souls to freedom. 
                                             To succeed, you must swipe the souls at the right time to the beat of the music. 
                                             The goal is to complete the song and help free as many souls as possible before they are forever lost. 
+											The game was intended to have a captivating story and eventful gameplay that kept the player engaged. 
+                                            The gameplay for the end product is rather interesting and fun, but we did not have time to develop any sort of story.
 										</p>
                                         <a href="https://play.google.com/store/apps/details?id=com.Grupp17.SoulConductor">Visit the Google Play store page</a> <br />
 										<a href="https://drive.google.com/file/d/1jsHPUFBrjAe4ZHFdhrMmLCgJymABF1Bq/view?usp=sharing">Download apk for android here</a><br />
@@ -94,40 +95,78 @@
 								<h2>The Work</h2>
 								</div>
 								<p>
-									Five person group project during my bachelor. Developed in Unity over the course of two months following the agile work method Scrum.
-									My main role was general programmer and VFX artist and ended up being mainly responsible for:<br />
-									• Designing & implementing how the touch input is managed and how objects are sliced/swiped.<br />
-									• Designing & implementing the particle effects.<br />
-									• The effect of breaking the souls free as a glass bubble.<br />
-									• Optimizing performance on mobile.<br />
-									• The store page images shown below.
-									<!--More details of my contribution can be read further below after the video and images. -->
+									Five person group project during my bachelor. Developed in Unity over the course of two months following the agile work method Scrum. All work 
+									was done remotely with collaborations and meetings taking place on Discord.
+									<br /><br />
+									
+									My main role was general programmer and VFX artist focusing on gameplay and interaction. I ended up being mainly responsible for:<br />
+									• Designing & implementing the <b>general gameplay</b>.<br />
+									• Designing & implementing how the <b>touch input</b> is managed and how objects are sliced/<b>swiped</b>.<br />
+									• Designing & implementing the <b>particle effects</b>.<br />
+									• The effect of breaking the souls free from a glass bubble.<br />
+									• <b>Optimizing performance</b> on mobile.<br />
+									• The <b>store page screens</b>.<br />
+									<br />
+									I'll talk about some details of these below.
 								</p>
 
+								<h3>Gameplay</h3>
+								<p>
+									In small groups like this everyone contributes to the initial ideation of the project, however, we were touching on the genre of rythm games 
+									and I came up with the idea of mixing the popular mobile game 'Fruit Ninja' with the rythm genre. I made a quick computer prototype 
+									(with the help of <a href="https://www.youtube.com/watch?v=3g5_8sE18tQ">Brackeys</a> ♥) and the team felt the concept was very doable for us. 
+									<div class="image fit" style="text-align: center;"><img src="images/project_soul_conductor/POC.gif" alt="" />Proof Of Concept</div>
+									The university course with which this project was done was teaching a lot about UX and I set as a personal <b>goal</b> to really make the 
+									interaction of <b>slicing these things feel good</b>. One of the <b>challenges</b> I faced as a programmer was to minimize the lag of the touch input on mobiles. 
+									I learned that mobiles inherently have lag in the touch input, and Unity adds to this as well.
+									<div class="image fit" style="text-align: center;"><img src="images/project_soul_conductor/InputLag.jpg" alt="" />Registered Input Positions</div>
+									I attempted several things to minimize this: using Unity's new input system, using the 'enhanced touch' version of this new system, raising the 
+									capped FPS (FPS is by default capped to 30 FPS by applications to save battery etc.). It helped alleviate some of the lag but I never got down to 
+									the same input registration as my own mobile's OS. However, when people were playtesting the game on their own phones they said that they didn't experience any lag.
+								</p>
+
+								<h3>Visual Effects</h3>
+								<p>
+									To enhance the interactions and its juciness, I tried to implement as many visual effects a possible.
+									<div class="image fit" style="text-align: center;"><img src="images/project_soul_conductor/ParticlesBrokenGlass.gif" alt="" />Effects of Swiping the Bubbles</div>
+									Swiping the trapped spirits is the main thing you as a player is doing, so I wanted good feedback on this. I made the colored circle intentionally minimalistic, 
+									with red transparent color when you shouldn't swipe and green opaque when you should. With the decreasing size of the ring indicating the timing of the beats. 
+									Heart particles and a text appear when the player is swiping to tell how good the timing was. I made the bubble appear like glass breaking, with a random glass breaking 
+									sound playing each time.
+									<div class="image fit" style="text-align: center;"><img src="images/project_soul_conductor/Fireflies.gif" alt="" />Spirits in the Distance</div>
+									The freed little spirits gets to return to their friends in the forest! ^_^
+									<div class="image fit" style="text-align: center;"><img src="images/project_soul_conductor/SongCarousel.gif" alt="" />Song Selection Carousel</div>
+									The main graphic artist was working on a song selection menu and was struggling to get a carousel implemented in Unity. I helped her off by creating the basics 
+									of how the UI should be structured in Unity with a perspective projection to get the buttons to rotate around the tree and coding this rotation effect. So working 
+									together we created this nice menu.
+								</p>
+
+								<h3>Store page screens</h3>
+								<p>
+									I made these <a href="https://play.google.com/store/apps/details?id=com.Grupp17.SoulConductor">Google Play store page</a> screenshots in Photoshop
+									from the top of my head and by experimenting with different techniques.
+									<div class="image fit"><img src="images/project_soul_conductor/1Screen720px.png" alt="" /></div>
+									I wanted to capture and purvey the essence of our gameplay with this screen by hightlighting the instance with a yellow outline and describe it
+									 with a text. Sort of taking inspiration from how I feel many other mobile games highlight details in their store page screens.
+									<div class="image fit"><img src="images/project_soul_conductor/2Screen720px.png" alt="" /></div>
+									This screen was to show of one of our features in the game, the score leaderboard. We understood that one of our target groups, the hardcore rythm gamers,
+									 want to be able to compete and show of their skills. Showing this off in the store page felt like a good idea.
+								</p>
+								<p>
+									Below are some early versions of our screens I made into the 3rd week of the project to help guide the vision of the project.
+									 <div class="row gtr-50 gtr-uniform">
+										<div class="col-6"><span class="image fit"><img src="images/project_soul_conductor/earlyScreen1.jpg" alt="" /></span></div>
+										<div class="col-6"><span class="image fit"><img src="images/project_soul_conductor/earlyScreen2.jpg" alt="" /></span></div>
+									</div>
+								</p>
 								<div style="text-align: center;">
 								<h2>Dev Blog</h2>
 								</div>
 								<p>
-									I kept a blog that documented my work process. Unfortunately I wrote it in Swedish and have not proof-read and 
-									edited the text, so it is what it is at the moment. 
+									I kept a blog that documented my work process. Unfortunately I wrote it in Swedish and have not had time to re-write, so it is what it is at the moment. <br />
 									<a href="https://docs.google.com/document/d/12pNXxc7NvfLjTaOp4eOUzgtm9GlgaS4lYlidRRCgWyw/edit?usp=sharing">Blog in Google Docs</a>.
 								</p>
-
-								<hr />
-								<header class="major">
-									<h1>Images</h1>
-                                </header>
-								
-                                <div class="image fit"><img src="images/project_soul_conductor/1Screen720px.png" alt="" /></div>
-                                <div class="image fit"><img src="images/project_soul_conductor/2Screen720px.png" alt="" /></div>
-
-								<hr />
-								<!--<header>
-									<h1>Detailed Info</h1>
-                                </header>-->
-
 							</section>
-
 					</div>
 
 				<!-- Footer -->
