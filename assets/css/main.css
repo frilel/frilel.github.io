@@ -2041,8 +2041,9 @@ input, select, textarea {
 
 	.box {
 		border: solid 2px;
-		margin-bottom: 2rem;
-		padding: 1.5rem;
+		margin-bottom: 0rem;
+		padding: 1.0rem;
+		font-size: 0.8rem;
 	}
 
 		.box > :last-child,
@@ -2057,8 +2058,19 @@ input, select, textarea {
 			padding: 0;
 		}
 
+		.box > p {
+			font-size: 1rem;
+			text-align: left;
+			margin-bottom: 1rem;
+		}
+
+		.box > h3 {
+			margin: 0;
+			text-decoration: underline;
+		}
+
 	.box {
-		border-color: #eeeeee;
+		border-color: #585858;
 	}
 
 /* Button */
