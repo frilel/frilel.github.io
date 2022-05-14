@@ -2043,7 +2043,6 @@ input, select, textarea {
 		border: solid 2px;
 		margin-bottom: 0rem;
 		padding: 1.0rem;
-		font-size: 0.8rem;
 	}
 
 		.box > :last-child,
@@ -2059,12 +2058,13 @@ input, select, textarea {
 		}
 
 		.box > p {
-			font-size: 1rem;
+			font-size: 0.95rem;
 			text-align: left;
 			margin-bottom: 1rem;
 		}
 
-		.box > h3 {
+		.box > h3, h4 {
+			font-size: 0.9rem;
 			margin: 0;
 			text-decoration: underline;
 		}
