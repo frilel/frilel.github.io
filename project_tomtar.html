@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<!--
+	Christian Lindberg's portfolio website.
+
+	You are free to use this website's code for your own personal and commercial use
+	under the CCA 3.0 license (https://creativecommons.org/licenses/by/3.0/)
+-->
+<html>
+	<head>
+		<title>Split-Screen game Tomtar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="bio.html">Resume, Bio & Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/christian-lindberg-0583871a0/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/frilel" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://christianlindberg.itch.io/" class="icon brands fa-itch-io"><span class="label">itch.io</span></a></li>
+                            <li><a href="https://www.artstation.com/crillelindberg" class="icon brands fa-artstation"><span class="label">Artstation</span></a></li>
+							<li><a href="https://www.behance.net/lindbergchristian" class="icon brands fa-behance"><span class="label">Behance</span></a></li>
+							<!-- TODO: add mail & CV pdf -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Tomtar</h1>
+									<p>Project Work in Computer Game Design - masters's course - Graded B</p>
+                                </header>
+
+								<iframe width="720" style="max-width:100%" src="https://www.youtube.com/embed/A6FiTvUX0lI" title="YouTube video player" frameborder="0" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<br />
+
+								<div class="row">
+									<div class="col-4"><!-- short things -->
+										<div class="box">
+											<h3>Platform</h3>
+											<p>Windows PC</p>
+											<h3>Engine</h3>
+											<p>Unity</p>
+											<h3>Tools used</h3>
+											<p>Unity C# scripting, Unity plugin ProBuilder, Blender, Discord.</p>
+											<h3>Duration</h3>
+											<p>10 weeks</p>
+											<h3>Team Size</h3>
+											<p>5</p>
+											<h3>Roles</h3>
+											<p>Level Designer, Gameplay Programmer, Lighting Artist</p>
+										</div>
+									</div>
+									<div class="col-8 col-8-small"><!-- text -->
+										<h2>The game</h2>
+										<p>
+											<i>Tomtar: A Long Way From Home</i> is a cooperative puzzle platformer designed to be played by siblings and friends.
+											The game tells the story of two siblings Britt and Nils as they are accidentally taken from their home and dropped off in a new house.
+											The siblings must work together and use their special powers to learn about their whereabouts, avoid the humans,
+											and make it back home. The game is particularly taking inspiration from the recent successful game "It Takes Two".
+										</p>
+										<p>
+											The game can be downloaded
+											<a href="https://drive.google.com/file/d/1NFA2jnsZn6B2_sMVveR_5mEexEmADq7a/view?usp=sharing"><b>[here]</b></a>.
+										</p>
+										<p>
+											The code for the game is available here:
+											<a href="https://github.com/frilel/Tomtar-2022"><b>[github.com/frilel/Tomtar-2022]</b></a>.
+										</p>
+										<p>
+											I kept a blog that documented my work process in more detail that can be read
+											<a href="https://drive.google.com/drive/folders/1KKPoEn96QnutqCmFhizSMFc5P-EnTOGa?usp=sharing"><b>[here]</b></a>.
+										</p>
+										<p>
+											A small website was made to "promote" the game, available
+											<a href="https://sahilshahpatel.com/tomtar/"><b>[here]</b></a>.
+										</p>
+									</div>
+								</div>
+
+								<hr />
+								<div style="text-align: center;"><h2>A Playthrough</h2></div>
+								<iframe width="720" style="max-width:100%" src="https://drive.google.com/file/d/1GTAqvGNeTUYPkN9CXpuBw7r_Pn-icnxA/preview" title="Google video player" 
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<div style="text-align: center;"><h2>The Project</h2></div>
+								<p>
+									For this project I wanted to try to focus on designing the game, making the gameplay and experience fun. Being the one with 
+									the most experience with working in Unity, I also programmed the majority of the game. One thing this project made me realize
+									is that I enjoyed Level Designing and that knowledge about Human-Computer Interaction is good to have in that role. Down below
+									I'll describe some of the parts I worked on in this project.
+								</p>
+								<div style="text-align: center;"><h2>Programming</h2></div>
+								<h3>Setting up the project</h3>
+								<p>
+									Since the rest of the team was inexperienced with game development, and me not really wanting to focus on engineering on this project,
+									I set up the basics of the game with a premade character controller template that Unity recently had begun providing. The template had
+									a basic character controller premade that I would extend upon. The template also made use of Unity's
+									"new" camera system <i>Cinemachine</i>, which was really nice to work with and I would have loved to explore more its capabilities
+									making custom camera transitions, camera shakes, cutscenes etc. I also had the project make use of Unity's "new" input system
+									which had in-built basic split screen support. With all these systems having readily available documentation my hopes were that
+									the rest of the team could more easily start creating things for the game. 
+								</p>
+								<h3>Grappling Hook</h3>
+								<p>
+									This mechanic can be seen in the above playthrough at 1:42.
+									Taking inspiration from a gameplay mechanic in <i>It Takes Two</i> where one player throws out nails on walls that the other player can swing on
+									using a hammer. We wanted something similar we called Nail and Thread. I took on the task of creating this mechanic. Initially I wanted the
+									player "swinging" like Tarzan but had issues with getting this physics interaction working well with the template's character controller.
+									Instead of spending time creating/switching to a physical-based character controller, I made the mechanic a more simple "get pulled towards target"
+									grapple hook.
+								</p>
+								<p>
+									<span class="image fit"><img src="images/project_tomtar/ConjureGrappable.gif" alt="" />
+									As can be seen in this GIF of an early implementation, the player with blue legs throws out green cubes that the the other player can attach
+									their grappling hook.
+									</span>
+								</p>
+								<p>
+									<span class="image fit"><img src="images/project_tomtar/GrappleHook.gif" alt="" />
+									In this GIF you can see the player with orange legs traversing with their grappling hook. As the character controller wasn't physical-based,
+									I scripted the motion following this algorithm:
+										<ol>
+											<li>
+												When grappling, move the character towards the grappling point.
+											</li>
+											<li>
+												When letting go of the grappling hook, save the velocity-momentum of the character and add some extra magnitude for a “push” feeling.
+												Also apply extra upward momentum, to avoid immediate plummeting.
+											</li>
+											<li>
+												Attenuate the fly-momentum over time.
+											</li>
+											<li>
+												When the character gets grounded the remaining momentum is set to zero.
+											</li>
+										</ol>
+									</span>
+								</p>
+
+								<div style="text-align: center;"><h2>Level Designing</h2></div>
+								<h3>Level 1</h3>
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/project_tomtar/Level1Room1.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/project_tomtar/Level1Room2.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/project_tomtar/Level1Room3.png" alt="" /></span></div>
+									</div>
+								<p>
+									Level 1 is the majority of the game. In the above playthrough video, the level ends at 8:40. I designed, prototyped, and scripted everything
+									by myself. What I didn't do was placing the final assets. The idea was of course to have platform puzzles that require cooperation and the use of
+									each characters unique abilites to solve. Details can be read in Section 4.2 in the 
+									<a href="https://docs.google.com/document/d/1QEw-ngczhPjbJIX8hlT5fEfEA1PFA2V5jEPfU_mdULI/edit#heading=h.x7zt7iaxbggy"><b>[GDD]</b></a>.
+								</p>
+								<p>
+									Being the first time I designed a level, I could work more creatively by quickly prototyping designs in Unity. I got aquainted with the Unity
+									plugin <a href="https://unity.com/features/probuilder"><b>[ProBuilder]</b></a> and had lots of fun with it. Below I show how I had prototyped
+									the first puzzle the players encounter in the playthrough above.
+								</p>
+								<p>
+									<span class="image fit"><img src="images/project_tomtar/Puzzle1.gif" alt="" />
+									The players are in a closed off room, with only a small opening in the wall that the smaller character can enter. They learn that only the
+									larger character can push these boxes.
+									</span>
+								</p>
+								<p>
+									<span class="image fit"><img src="images/project_tomtar/Puzzle2.gif" alt="" />
+									The smaller character enter the small opening. On the other side there is something on the ground, stepping on it opens a door for
+									the other player.
+									</span>
+								</p>
+								<p>
+									<span class="image fit"><img src="images/project_tomtar/Puzzle3.gif" alt="" />
+									The players realize they cannot jump high enough to get up on this obstacle. What to do?
+									</span>
+								</p>
+								<p>
+									<span class="image fit"><img src="images/project_tomtar/Puzzle4.gif" alt="" />
+									This box they had could help them get up!
+									</span>
+								</p>
+								<p>
+									Later on in the development, I had also implemented a mechanic that respawns these boxes if they get pushed into holes etc.
+									During playtesting, players didn't know that this mechanic existed and was confused about it. I therefore added a part to this scene
+									where the player would be taught that the respawn mechanic exists.
+									<span class="image fit"><img src="images/project_tomtar/TeachRespawnable.gif" alt="" />
+									The player is forced to push down the box, and sees how it respawns from this handbag. Player will hopefully now know that other handbags in
+									the level can respawn boxes.
+									</span>
+								</p>
+								<div style="text-align: center;"><h2>Lighting</h2></div>
+								<h3>Lighting the Levels</h3>
+								<p>
+									As part of designing the Level 1, I wanted to learn how lighting the world worked in Unity Universal Render Pipeline. I knew that
+									lights would have to be baked, being an indoor environment. I researched how to go about it and how lightmapping worked in Unity. 
+									A very interesting area of technology. Lighting in the High Definition Render Pipeline seemed even more fun, but I kept this project in URP.
+								</p>
+								<p>
+									More details about this process can be read in the DevBlog
+									<a href="https://docs.google.com/document/d/1MeqBdxQvjnHLWppiTgN8mF3cV3ys6wAmBLyqHEnxgN0/edit#heading=h.plrlgzntvs3p"><b>[Level 1]</b></a>
+									 & <a href="https://docs.google.com/document/d/1aa2B3SRRhlNSEWHp0o7EwE0-wG8yo80Kn3PdLR2xGWM/edit#heading=h.6ijrptqbmwnq"><b>[Level 2]</b></a>.
+								</p>
+								<p>
+									Here's how Level 1 looked with just dynamic lighting:
+									<span class="image fit"><img src="images/project_tomtar/Level1_dynamic_light.png" alt="" /></span>
+								</p>
+								<p>
+									Here's how Level 1 looked while I was in the process of putting out baked light:
+									<span class="image fit"><img src="images/project_tomtar/Level1_light_wip.png" alt="" /></span>
+								</p>
+								<p>
+									
+									<span class="image fit">
+										Baked lighting only works with <i>static</i> objects. In order to have <i>dynamic</i> objects, such as the character, being lit
+										I used <b>light probes</b>:
+										<img src="images/project_tomtar/Level1_probes.png" alt="" />
+									</span>
+								</p>
+								<p>
+									How Level 2 looked before I worked on it:
+
+									<div class="row">
+										<div class="col-6"><span class="image fit"><img src="images/project_tomtar/Level2_light_before_overview.png" alt="" /></span></div>
+										<div class="col-6"><span class="image fit"><img src="images/project_tomtar/Level2_light_before_playerview.png" alt="" /></span></div>
+									</div>
+								</p>
+								<p>
+									How Level 2 looked afterwards. Apart from working on the lighting I also kind of rebuilt the whole room and changed textures. In this scene it was quite important to have clear shadows that the players could identify as places to hide.
+
+									<div class="row">
+										<div class="col-6"><span class="image fit"><img src="images/project_tomtar/Level2_light_after_overview.png" alt="" /></span></div>
+										<div class="col-6"><span class="image fit"><img src="images/project_tomtar/Level2_light_after_playerview.png" alt="" /></span></div>
+									</div>
+								</p>
+								<hr />
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:christian@christianlindberg.me?Subject=Contact From Portfolio">christian@christianlindberg.me</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/christian-lindberg-0583871a0/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Website code: <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0</a></li><li>&copy; All content and trademarks property of their respective owners.</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

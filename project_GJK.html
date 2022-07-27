@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!--
+	Christian Lindberg's portfolio website.
+
+	You are free to use this website's code for your own personal and commercial use
+	under the CCA 3.0 license (https://creativecommons.org/licenses/by/3.0/)
+-->
+<html>
+	<head>
+		<title>GJK Implementation In Unity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="bio.html">Resume, Bio & Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/christian-lindberg-0583871a0/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/frilel" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://christianlindberg.itch.io/" class="icon brands fa-itch-io"><span class="label">itch.io</span></a></li>
+                            <li><a href="https://www.artstation.com/crillelindberg" class="icon brands fa-artstation"><span class="label">Artstation</span></a></li>
+							<li><a href="https://www.behance.net/lindbergchristian" class="icon brands fa-behance"><span class="label">Behance</span></a></li>
+							<!-- TODO: add mail & CV pdf -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>GJK Algorithm</h1>
+									<p>Project Work in Computer Graphics and Interaction - masters's course - Graded A</p>
+                                </header>
+
+								<div class="image fit"><img src="images/project_GJK/the-gjk-visualized.gif" alt="" /></div>
+								<br />
+
+								<div class="row">
+									<div class="col-4"><!-- short things -->
+										<div class="box">
+										<h3>Platform</h3>
+										<p>Windows PC</p>
+										<h3>Tools used</h3>
+										<p>Unity, Visual Studio, OpenGL, GLUT, SDL2.</p>
+										<h3>Duration</h3>
+										<p>6 weeks</p>
+										<h3>Team Size</h3>
+										<p>1</p>
+										</div>
+									</div>
+									<div class="col-8 col-8-small"><!-- text -->
+										<h2>The course</h2>
+										<p>
+											The project was done for a master's course called <i>Computer Graphics and Interaction</i>.
+											As our professor said "A big part of Computer Graphics and Interaction is math-programming".
+											I chose to focus on the	interaction side of it, which to a big degree is about simulating physics
+											and motion. The course consisted of both some interesting lab assignments and a larger project. 
+										</p>
+									</div>
+								</div>
+
+								<hr />
+
+								<div style="text-align: center;">
+								<h2>The Project - Graded A</h2>
+								</div>
+								
+								<p>
+									Since I had previously been responsible for programming collision handling in previous game development projects I was curious
+									about learning more of how collision algorithms work. In my research I learned that an algorithm called GJK is a fundamental piece 
+									and I decided to try and implement this in Unity as a plugin. Many online descriptions of the algorithm omitted the
+									computation of closest points between objects and was usually exemplified in 2D. I therefore raised the bar by implementing
+									these aspects in my project.
+								</p>
+								<p>
+									As seen in the GIF above, the implementation detects insersection of convex polyhedra, making them red, and draws
+									white lines between the closest points of non-intersecting objects.
+								</p>
+								<p>
+									The final report, written as a scientific article submission, can be read here:
+								</p>
+								<iframe src="https://drive.google.com/file/d/1Oi-VdALEVOdyvVcS_BxhpU4hNAf95aCT/preview" width="100%" height="600" allow="autoplay"></iframe>
+								<p>
+									(If the iframe for the pdf above isn't working you can download the pdf 
+									<a href="docs/Implementing_GJK_as_a_plugin_for_Unity-Christian_Lindberg_Project_Report.pdf"><b>[here]</b></a>.)
+								</p>
+								<p>
+									The code for the GJK algorithm, including computation of closest points, is available here:
+									<a href="https://github.com/frilel/CLCollision"><b>[github.com/frilel/CLCollision]</b></a>.
+								</p>
+								<p>
+									The Unity project example, which the GIF above shows, is available here:
+									<a href="https://github.com/frilel/GJK_tester"><b>[github.com/frilel/GJK_tester]</b></a>.
+								</p>
+								<p>
+									I also kept a blog that sort of documented my work process which can be read
+									<a href="https://dh2323christianlindberg.wordpress.com"><b>[here]</b></a>.
+								</p>
+
+								<div style="text-align: center;">
+									<h2>Lab Assignments - Graded PASS</h2>
+									</div>
+									<div class="image fit"><img src="images/project_GJK/BoundingSphereVolumesIntersection.gif" alt="" /></div>
+									<p>
+										The course also had some interesting and challenging labs.
+										The lab track I chose mainly had me explore programming with <b>OpenGL in C++</b>.
+										Some of the notable things I learned was to write basic vector math and <b>quaternion</b> classes. 
+										Using these classes I would make OpenGL draw a simple tank 3D model,
+										assembled with separate pieces that could be moved with keyboard input.
+										Learned how to apply transformations to matrices in OpenGL. This had me learn about how <i>transforms</i>
+										and transform hierarcy for animating parts work in detail. I programmed a basic <b>Bounding Volume Hierarcy</b>
+										for making penetration/collision tests with, exemplified in the GIF above.
+									</p>
+									<p>
+										More can be read in my lab reports
+									<a href="https://drive.google.com/drive/folders/15Tc4tiBElMRiI1gBWHj2CdIEMyiPaECe?usp=sharing">
+										<b>[here]</b></a>.
+									</p>
+
+								<hr />
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:christian@christianlindberg.me?Subject=Contact From Portfolio">christian@christianlindberg.me</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/christian-lindberg-0583871a0/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Website code: <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0</a></li><li>&copy; All content and trademarks property of their respective owners.</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

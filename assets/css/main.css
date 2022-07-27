@@ -329,12 +329,15 @@ input, select, textarea {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
+		overflow-wrap: break-word;
 		box-sizing: border-box;
 		align-items: stretch;
 	}
 
 		.row > * {
 			box-sizing: border-box;
+			overflow: hidden;
+			text-overflow: clip;
 		}
 
 		.row.gtr-uniform > * > :last-child {
@@ -395,6 +398,7 @@ input, select, textarea {
 
 		.row > .col-4 {
 			width: 33.33333%;
+
 		}
 
 		.row > .off-4 {
