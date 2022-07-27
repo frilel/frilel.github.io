@@ -150,10 +150,10 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
-		line-height: 1.75;
+		line-height: 1.5;
 	}
 
 	a {
