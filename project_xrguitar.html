@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Christian Lindberg's portfolio website.
+
+	You are free to use this website's code for your own personal and commercial use
+	under the CCA 3.0 license (https://creativecommons.org/licenses/by/3.0/)
+-->
+<html>
+	<head>
+		<title>Audience VR game Run Guys</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="bio.html">Resume, Bio & Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/christian-kk-lindberg/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/frilel" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://christianlindberg.itch.io/" class="icon brands fa-itch-io"><span class="label">itch.io</span></a></li>
+                            <li><a href="https://www.artstation.com/crillelindberg" class="icon brands fa-artstation"><span class="label">Artstation</span></a></li>
+							<li><a href="https://www.behance.net/lindbergchristian" class="icon brands fa-behance"><span class="label">Behance</span></a></li>
+							<!-- TODO: add mail & CV pdf -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Run Guys</h1>
+									<p>Project work in Advanced Research - masters's course - Graded A</p>
+                                </header>
+
+								<div style="text-align: center;">
+                                    <video width="720" style="max-width:100%" controls><source src="videos/XR_Guitar_20221202_192204.mp4" type="video/mp4">
+                                  		Your browser does not support this video.
+                                  	</video>
+								</div>
+								<br />
+
+								<div class="row">
+									<div class="col-4"><!-- short things -->
+										<div class="box">
+										<h3>Platform</h3>
+										<p>Meta Quest 2, WebMIDI</p>
+										<h3>Tools used</h3>
+										<p>Unity</p>
+										<h3>Duration</h3>
+										<p>7 weeks</p>
+										<h3>Team Size</h3>
+										<p>4</p>
+										<h3>Roles</h3>
+										<p>Project manager, Unity developer</p>
+										</div>
+									</div>
+									<div class="col-8 col-8-small"><!-- text -->
+										<h2>In short</h2>
+										<p>
+											This was a project for a course intended to prepare us for the master's thesis. We developed an application for the Meta Quest 2 headset which was receiving data from a MIDI-guitar (a digital guitar) and displaying a virtual guitar in the place of the real guitar.
+										</p>
+										<p>
+											Regrettably, there is not much to showcase, as we were under significant time pressure to complete this project, often overlooking documentation for both the process and the final product. Nevertheless, it was an enjoyable and rewarding project that I take great pride in sharing
+										</p>
+										
+									</div>
+								</div>
+
+								<hr />
+
+								<div style="text-align: center;">
+									<h2>The situation</h2><!--STAR: Situation, Task, Action, Result-->
+								</div>
+								<p>
+									We partnered with a supervisor who was working in collaboration with a guitar museum and seeking students to create an 'XR guitar.' This innovative concept aimed to allow the player to use a physical guitar while its visual appearance would be augmented using XR (eXtended Reality) technology. Additionally, the application we were tasked with developing needed to replicate a 'B-bending' feature (while the real physical do not have this feature).
+								</p>
+								<p>
+									<iframe width="100%" height="400px" src="https://www.youtube.com/embed/KhB2o1BeLNU" title="How to Use a B-Bender Guitar | Country Guitar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</p>
+								<p>
+									To facilitate this project, we were provided with a normal electric guitar, which we had the freedom to customize as necessary, and a MIDI pickup. MIDI, in this context, represents a digital musical notation that can be transmitted to a computer. The computer, in turn, can generate sound based on the notes played. The MIDI-pickup is attached to the electric guitar and connected via USB to a computer.
+								</p>
+								<div style="text-align: center;">
+									<h2>Target</h2>
+								</div>
+								<p>
+									I took on the role of project manager and, knowing that everyone in the group have a intense period with other courses, I knew it be best if I could quickly figure out what our main challenges were and research how we could tackle them.
+								</p>
+								<p>
+									There were two main challenges in this project. Firstly, where should we send the MIDI data (to the Quest 2 or a separate computer?) and how? Secondly, how can we map a virtual guitar to the location of a real guitar and replicate the B-bending feature?
+								</p>
+								<div style="text-align: center;">
+									<h2>Action</h2>
+								</div>
+								<p>
+									I extensively researched the two challenges and found several ways we could address them. The second challenge could be easily solved by just attaching one of the Quest 2 controllers to the real guitar and attach to the virtual guitar to the controller inside Unity. Then setting a "normal" position and "bending" position would allow the bending motion to be performed. More advanced solutions would be to use different types of trackers, such as Steam VR and HTC Vive trackers, or a XBOX Kitect to detect body movements.
+								</p>
+								<p>
+									<div class="image fit" style="text-align: center;"><a target="_blank" href="images/project_xrguitar/PlayingGuitar.jpg"><img src="images/project_xrguitar/PlayingGuitar.jpg" alt="" />The Quest 2 controller attached to the head of the guitar.</a></div>
+								</p>
+								<p>
+									<div class="image fit" style="text-align: center;"><a target="_blank" href="images/project_xrguitar/UnityGuitar.jpg"><img src="images/project_xrguitar/UnityGuitar.jpg" alt="" />An early version of how the virtual guitar looked with a B-bending bar at the head. Buttons seen can reset the B-bending bar position.</a></div>
+								</p>
+								<p>
+									The second challenge was harder to find a convenient solution. We tried to send the MIDI data directly to the Quest 2 with a cable (hoping to modify the MIDI-data for B-bending in Unity), but the MIDI pickup was not recognized by the Quest 2. We could easily send the MIDI-data to a computer and play the guitar sounds in a digital audio workstation (DAW), but I could not figure out a simple way for the DAW to receive data from the Quest 2 about the user performing a B-bending action.
+									I knew that we could send data easily through websockets in a local network and found that another MIDI application for Quest 2 (<a href="https://app.vrtuos.eu">VRtuos</a>) used something called <a href="https://webmidijs.org">WebMIDI API</a>. I asked a member in the group, that was experienced with web development and JavaScript, to investigate whether he could use this API to setup a websocket connection to the Quest 2 (which he could).
+									Below is the data model I created for this to make things clear for the group on how we could solve our challenge.
+								</p>
+								<p>
+									<div class="image fit" style="text-align: center;"><a target="_blank" href="images/project_xrguitar/DataModel.jpg"><img src="images/project_xrguitar/DataModel.jpg" alt="" />The data model showing how data flowed between components.</a></div>
+								</p>
+								<div style="text-align: center;">
+									<h2>Result</h2>
+								</div>
+								<p>
+									With the above described data model we could send MIDI data to the Quest 2 to help visualize which strings and notes the user was playing on the virtual guitar. The Quest 2 could send a data parameter on how much B-bending the user wants. The computer could modify the MIDI data according to the B-bending parameter and finally send this MIDI to a software that played the MIDI audio.
+								</p>
+								<p>
+									The video at the top of the page shows a early version of the prtotype, the first time we got everything working as intended.
+								</p>
+								<p>
+									Below is the written scientific report explaining a lot more, such as our user evaluation, of which I wrote a major part of.
+								</p>
+								<p>
+									<iframe src="https://drive.google.com/file/d/1h9gin2Lk2yr-pnZhB5q4ST_4i37i5Oe3/preview" width="100%" height="600" allow="autoplay"></iframe>
+									<b>(<a href="docs/Prototyping_a_B_Bender_Guitar_for_VR_Final_Christian_Lindberg.pdf">You can download the pdf [here]</a>.)</b>
+								</p>
+								<div style="text-align: center;">
+									<h2>Reflection</h2>
+								</div>
+								<p>
+									I, and probably the whole group, learned a lot during this project. About developing in Unity, the MIDI data, and scientific research on virtual instruments.
+									The project goal was quite ambitious and in retrospect I believe that the group’s focus on the implementation of the project may have been at the expense of the scientific research itself (which was a big part of the course). For example, the user evaluation was not all too extensive. Doing the work again I would make sure a scientific research plan is worked on at the beginning, before starting to designing and developing the prototype.
+								</p>
+
+								<hr />
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:christian@christianlindberg.me?Subject=Contact From Portfolio">christian@christianlindberg.me</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/christian-kk-lindberg/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Website code: <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0</a></li><li>&copy; All content and trademarks property of their respective owners.</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

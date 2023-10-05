@@ -124,7 +124,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			html {
-				font-size: 13pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -150,7 +150,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-family: 'Neue Helvetica', 'Times New Roman', serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.5;
@@ -179,7 +179,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2638,7 +2638,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 2rem 0;
 			width: 100%;
 		}
 
@@ -2821,12 +2821,12 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding-left: 1rem;
 	}
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 0.5rem 0 0;
+			padding: 1rem 1rem 0 0;
 			vertical-align: middle;
 		}
 
@@ -3830,7 +3830,6 @@ input, select, textarea {
 
 			#main > .post.featured {
 				text-align: center;
-				font-weight: bold;
 			}
 
 			@media screen and (max-width: 1280px) {

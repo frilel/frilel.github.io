@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Christian Lindberg's portfolio website.
+
+	You are free to use this website's code for your own personal and commercial use
+	under the CCA 3.0 license (https://creativecommons.org/licenses/by/3.0/)
+-->
+<html>
+	<head>
+		<title>Audience VR game Room For Sound?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="bio.html">Resume, Bio & Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/christian-kk-lindberg/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/frilel" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://christianlindberg.itch.io/" class="icon brands fa-itch-io"><span class="label">itch.io</span></a></li>
+                            <li><a href="https://www.artstation.com/crillelindberg" class="icon brands fa-artstation"><span class="label">Artstation</span></a></li>
+							<li><a href="https://www.behance.net/lindbergchristian" class="icon brands fa-behance"><span class="label">Behance</span></a></li>
+							<!-- TODO: add mail & CV pdf -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Room For Sound?</h1>
+									<p>Project work in Advanced Graphics and Interactions - masters's course - Graded A</p>
+                                </header>
+
+								<div class="image fit"><a target="_blank" href="images/project_rfs/RoomForSound.gif"><img src="images/project_rfs/RoomForSound.gif" alt="" /></a></div>
+								<br />
+
+								<div class="row">
+									<div class="col-4"><!-- short things -->
+										<div class="box">
+										<h3>Platform</h3>
+										<p>Meta Quest 2</p>
+										<h3>Tools used</h3>
+										<p>Unity, Arduino</p>
+										<h3>Duration</h3>
+										<p>10 weeks</p>
+										<h3>Team Size</h3>
+										<p>5</p>
+										<h3>Roles</h3>
+										<p>Proj. Manager, VR & Arduino Developer</p>
+										</div>
+									</div>
+									<div class="col-8 col-8-small"><!-- text -->
+										<h2>In short</h2>
+										<p>
+											This was one of two group projects during an intensive master's course in advanced graphics and interactions, intended to put to test what we had learned during our master's program.
+										</p>
+										<p>
+											<b>Room For Sound</b> is a prototype of a VR concert held hybridly online and physical. We implemented a few musical instruments, songs to play along to, and audience members being able join the virtual world with avatars using their smartphones.
+										</p>
+										<p>
+											<b>Check out our website</b> that showcase the project at: <a href="https://roomforsound.framer.website">https://roomforsound.framer.website</a>.
+											You can read more about my personal contribution below.
+										</p>
+									</div>
+								</div>
+
+								<hr />
+
+								<div style="text-align: center;">
+									<h2>The situation</h2><!--STAR: Situation, Task, Action, Result-->
+								</div>
+								<p>
+									The teachers gave the class free reign in deciding what to do as long as it was innovative and presentable as a museum exhibition in 3 months.
+									After initial brainstorming, our group quickly decided to work on a musical experience in VR. 
+									Our teacher suggested we also find a way to include an audience, thereby, making it a shared experience between several than just for one.
+								</p>
+								<p>	
+									<span class="image fit" style="text-align: center;">
+										<a target="_blank" href="images/project_rfs/RFS_miro.jpg"><img src="images/project_rfs/RFS_miro.jpg" alt="" />Brainstorming on the online whiteboard Miro.</a>
+									</span>
+								</p>
+								<div style="text-align: center;">
+									<h2>Target</h2>
+								</div>
+								<p>
+									Apart from developing in Unity, I chose to manage the project and to try and make a physical drum pedal controller for the virtual drum set we were creating (which was something early playtesters said they wanted).
+									I made sure we as a group was on the same page in aiming high, both in terms of grades and quality of the product.
+								</p>
+								
+								<div style="text-align: center;">
+									<h2>Action</h2>
+								</div>
+								<p>
+									As the project manager, I set up a Discord server and Miro board where all information and resources were collected, and communication were held.
+									I chose these tools as the group was familiar with them. 
+									I proposed dates for both physical and remote meetings, guided the topics of the meetings, and made sure they were documented.
+								</p>
+								<p>
+									<span class="image fit" style="text-align: center;">
+										<a target="_blank" href="images/project_rfs/RFS_project_plan.jpg"><img src="images/project_rfs/RFS_project_plan.jpg" alt="" />Project timeline I made for the group.</a>
+									</span>
+								</p>
+								<p>
+									As a developer I made sure that the Meta/Oculus Quest 2 framework and plugins were working. It contained pre-fabricated tools for hand-tracking and interactions with the controllers.
+									Otherwise, I spent a lot of time researching and implementing foot pedals that would interface with the Quest 2.
+									I had an Arduino board and began experimenting with it. I wanted the foot pedal to interface wirelessly with the Quest 2 and be easy to use as a potential product for sale.
+									My research boiled down to using a Bluetooth module, on the Arduino, that was HID (Human Interface Device) compliant. Meaning that the device could be automatically recognized as a gaming controller.
+									This helped the development as well, as Unity can easily find HID devices and there is no extra code we had to write. An alternative wireless data transfer protocol was a UDP/TCP websocket between the Arduino and Quest 2, but that would make the usage less user-friendly and required us to write more code.
+								</p>
+								<div style="text-align: center;">
+									<h2>Result</h2>
+								</div>
+								<p>
+									The group appreciated my work as a manager and I believe helped keep the team working ambitiously. A testament being the teacher's comment on our Hello World Demo (HWD):
+									<i>"Your HWD is historic already. Excellent work! It is one of the most entertaining and comprehensive HWDs we have every had in 11 years of AGI [the course]. Feel the pride!"</i>.
+								</p>
+								<p>
+									The application was also exhibited at the Swedish National Museum of Science and Technology for a day and was very popular among kids.
+								</p>
+								<p>
+									A working prototype of the foot pedal was finished. We could theoretically attach any number of pedals to the Arduino board. The pedals I had were only binary in their data, either on or off, but theoretically we could have used analog data and register how hard the foot pedal sound should be etc.
+									I had not worked with such hardware development earlier and was intentionally out of my comfort zone. I managed to reach my target with a working prototype and learned a lot along the way; about Arduino, HID, Bluetooth etc.
+									Just after this project I had use for these skills in a another course, requiring me to develop a 'touch sensitive fabric' sending data via Bluetooth to a computer.
+								</p>
+								<p>
+									<span class="image fit" style="text-align: center;">
+										<a target="_blank" href="images/project_rfs/RFS_pedals.jpg"><img src="images/project_rfs/RFS_pedals.jpg" alt="" />The drum pedal prototype, connected via Bluetooth to the Quest 2.</a>
+									</span>
+								</p>
+								<div style="text-align: center;">
+									<h2>Reflection</h2>
+								</div>
+								<p>
+									I learned that, for me, project management takes a lot of time if I do not have pre-set ways of doing things. Keeping information in written form is important as it is impossible to keep track of things in my head.
+									In future projects I will continue to try to document as much as possible.
+								</p>
+								<p>
+									Learning about the workings of the HID protocol was very useful and helped me understand more how controllers works. During my master's project I had to interface joysticks with Unreal Engine, and Unreal was a lot worse than Unity in this regard.
+									Knowledge I had gained in creating these drum pedals, helped me to faster find solutions to problems in my master's project.
+								</p>
+								<hr />
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:christian@christianlindberg.me?Subject=Contact From Portfolio">christian@christianlindberg.me</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/christian-kk-lindberg/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Website code: <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0</a></li><li>&copy; All content and trademarks property of their respective owners.</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

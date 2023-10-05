@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<!--
+	Christian Lindberg's portfolio website.
+
+	You are free to use this website's code for your own personal and commercial use
+	under the CCA 3.0 license (https://creativecommons.org/licenses/by/3.0/)
+-->
+<html>
+	<head>
+		<title>Master's Thesis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="bio.html">Resume, Bio & Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/christian-kk-lindberg/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/frilel" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://christianlindberg.itch.io/" class="icon brands fa-itch-io"><span class="label">itch.io</span></a></li>
+                            <li><a href="https://www.artstation.com/crillelindberg" class="icon brands fa-artstation"><span class="label">Artstation</span></a></li>
+							<li><a href="https://www.behance.net/lindbergchristian" class="icon brands fa-behance"><span class="label">Behance</span></a></li>
+							<!-- TODO: add mail & CV pdf -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Cybersickness in extended reality</h1>
+									<p>Master's thesis work for the Swedish Defense Research Agency (FOI)</p>
+                                </header>
+
+								<div class="image fit"><a target="_blank" href="images/master_thesis/MR_flight_sim.gif"><img src="images/master_thesis/MR_flight_sim.gif" alt="" /></a></div>
+								<br />
+
+								<div class="row">
+									<div class="col-4"><!-- short things -->
+										<div class="box">
+										<h3>Platform</h3>
+										<p>Windows PC, Varjo XR-3</p>
+										<h3>Tools used</h3>
+										<p>Unreal Engine, Cesium, JSBSim</p>
+										<h3>Duration</h3>
+										<p>7 months</p>
+										<h3>Team Size</h3>
+										<p>1</p>
+										</div>
+									</div>
+									<div class="col-8 col-8-small"><!-- text -->
+										<h2>In short</h2>
+										<p>
+											For my master's project in 2023, I conducted research at the <a href="https://foi.se/en/foi.html">Swedish Defense Research Agency</a> within the <a href="https://foi.se/en/foi/research/aeronautics-and-space-issues/flsc.html"> Swedish Air Force Combat Simulation Centre (FLSC)</a>. The task directive given involved investigating the utilization of immersive technologies in flight simulation.
+											I delved into a comparative analysis of cybersickness within two distinct flight simulation environments: virtual reality and mixed reality. To accomplish this, I developed a simulator for the novel <a href="https://varjo.com/products/xr-3/">Varjo XR-3</a> headset, utilizing the Unreal Engine and conducted user tests. The thesis is presently undergoing its final review.
+										</p>
+									</div>
+								</div>
+
+								<hr />
+
+								<div style="text-align: center;">
+									<h2>The Situation</h2><!--STAR: Situation, Task, Action, Result-->
+								</div>
+								<p>
+									The FLSC department was exploring the potential of immersive technology in fighter pilot training. I secured an internship with them, eager to work with the Varjo XR-3 headset and gain experience with the Unreal Engine.
+									Cybersickness, a common issue in VR, posed a challenge for pilot training. My proposal aimed to assess the Varjo XR-3's effectiveness in reducing cybersickness and develop a flight simulator using Unreal Engine. The FLSC approved the idea, and I initiated a pre-study report.
+								</p>
+
+								<div style="text-align: center;">
+									<h2>Target</h2>
+								</div>
+								<p>
+									My pre-study detailed background on cybersickness, related work, and how I would go about developing the flight simulator.
+									Previous research had indicated that a mixed reality (MR), with a lower amount of virtual environment, would elicit milder cybersickness than a pure virtual reality (VR).
+									I would, therefore, develop a VR version and a MR version and compare these. 
+								</p>
+								<p>
+									The targets to achieve boiled down to:
+									<ul>
+										<li>Develop a VR and MR flight simulator in Unreal Engine, being as realistic as possible</li>
+										<li>Determine if there is a difference in cybersickness between the two</li>
+										
+									</ul>
+								</p>
+								
+								<div style="text-align: center;">
+									<h2>Action</h2>
+								</div>
+								<p>
+									While I was relatively new to Unreal Engine, I had dedicated the Christmas Holidays to learning its basics prior to getting invited to the FLSC. Given the project's scope, creating a realistic flight simulator from scratch was impractical. Instead, I discovered a helpful guide on building a flight simulator <a href="https://www.unrealengine.com/en-US/blog/antoinette-project-tools-to-create-the-next-generation-of-flight-simulators">(here)</a>.
+									This resource allowed me to swiftly incorporate realistic terrain generation via <a href="https://cesium.com">Cesium</a> and realistic flight dynamics physics using <a href="https://github.com/JSBSim-Team/jsbsim">JSBSim</a>. Although I explored <a href="https://developers.arcgis.com/unreal-engine/">ArcGIS</a> as an alternative for terrain generation, I encountered issues and ultimately opted for Cesium."
+								</p>
+								<p>
+									<div class="image fit" style="text-align: center;"><a target="_blank" href="images/master_thesis/ProofOfConceptFlightSim.gif"><img src="images/master_thesis/ProofOfConceptFlightSim.gif" alt="" />This proof of concept was quickly developed.</a></div>
+								</p>
+								<p>
+									A lot more work had to be done to make the simulator work with the Varjo XR-3 headset in VR and MR. The <a href="https://developer.varjo.com">Varjo developer documentation</a> helped a lot in this regard. They had a plugin for Unreal where a lot of their features are implemented, although their support for Unity was more extensive.
+									The FLSC also had a cool cockpit platform with realistic JAS 39 Gripen joysticks which I interfaced with Unreal, using the plugin <a href="https://unrealengine.com/marketplace/en-US/product/wm-input-manager">WM Input Manager</a>, since Unreal Engine could not read XINPUT data natively.
+									There were a lot of issues that was duct taped as well, which hurts as a perfectionist, but it was just a demo simulator I needed to get done quickly.
+								</p>
+								<p>
+									To determine differences in cybersickness, I designed a experiment where participants would carry out certain tasks. I "measured" their cybersickness using a well-established instrument in academia, called the Simulator Sickness Questionnaire. Data from this instrument and one other formed the base data for statistical analyses I performed in <a href="https://www.ibm.com/spss">SPSS</a>.
+								</p>
+
+								<div style="text-align: center;">
+									<h2>Result</h2>
+								</div>
+								<p>
+									The flight simulator was completed in approximately 8 weeks, allowing me to proceed with conducting experiments involving participants. You can view demonstrations of both the VR and MR simulators in the videos below.
+								</p>
+								<p>
+									<iframe width="100%" height="400px" src="https://www.youtube.com/embed/GxQ9M_5_C6Q?si=LAKWEcp7iMdxN5pr" title="YouTube video player" frameborder="0" 
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</p>
+								<p>
+									<iframe width="100%" height="400px" src="https://www.youtube.com/embed/rNgK-zp53o0?si=y5DZLjhCZFQSbZCQ" title="YouTube video player" frameborder="0" 
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</p>
+								<p>
+									I successfully recruited 29 participants who participated in two experimental sessions, each conducted on separate days. One session took place in virtual reality (VR), while the other occurred in mixed reality (MR).
+									One particularly noteworthy finding was that cybersickness appeared to be less severe in the MR sessions. This suggests that FLSC (and other simulation centers) should consider prioritizing the development of MR flight simulators as a means to reduce cybersickness.
+									The final report received positive feedback from both FLSC researchers and individuals at my university who had the opportunity to review it.
+								</p>
+								<div style="text-align: center;">
+									<h2>Reflection</h2>
+								</div>
+								<p>
+									Working on this project was both immensely rewarding and enjoyable. Drawing from my prior experiences in the master's program, developing different applications, and writing several reports, I personally believe this thesis stands out among my works, for its thorough research, written report, and the quickly developed flight simulator it encompasses.
+								</p>
+								<p>
+									I exceeded the intended duration of 20 weeks by approximately 5 weeks, even though I was consistently working more than 40 hours per week. Reflecting on the project, one aspect I would reconsider is the experiment procedure.
+									Originally, I structured it in a way that required me to handle multiple simultaneous tasks and a significant amount of manual work. This approach made conducting the sessions incredibly demanding and prolonged the process beyond the intended timeline.
+									Doing it again, I would aim to streamline and automate processes to enhance efficiency. Even if it initially would take a bit more of my time.
+								</p>
+
+								<hr />
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:christian@christianlindberg.me?Subject=Contact From Portfolio">christian@christianlindberg.me</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/christian-kk-lindberg/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Website code: <a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0</a></li><li>&copy; All content and trademarks property of their respective owners.</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
