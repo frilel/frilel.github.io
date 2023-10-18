@@ -68,8 +68,9 @@
 									<div class="col-8 col-8-small"><!-- text -->
 										<h2>In short</h2>
 										<p>
-											For my master's project in 2023, I conducted research at the <a href="https://foi.se/en/foi.html">Swedish Defense Research Agency</a> within the <a href="https://foi.se/en/foi/research/aeronautics-and-space-issues/flsc.html"> Swedish Air Force Combat Simulation Centre (FLSC)</a>. The task directive given involved investigating the utilization of immersive technologies in flight simulation.
-											I delved into a comparative analysis of cybersickness within two distinct flight simulation environments: virtual reality and mixed reality. To accomplish this, I developed a simulator for the novel <a href="https://varjo.com/products/xr-3/">Varjo XR-3</a> headset, utilizing the Unreal Engine and conducted user tests. The thesis is presently undergoing its final review.
+											For my master's project in 2023, I conducted research for the <a href="https://foi.se/en/foi/research/aeronautics-and-space-issues/flsc.html"> Swedish Air Force Combat Simulation Centre (FLSC)</a> at the <a href="https://foi.se/en/foi.html">Swedish Defense Research Agency</a>. The directive given involved investigating the utilization of immersive technologies in flight simulation.
+											I delved into a comparative analysis of cybersickness within two distinct flight simulation environments: virtual reality and mixed reality. To accomplish this, I developed a simulator for the <a href="https://varjo.com/products/xr-3/">Varjo XR-3</a> headset, utilizing the Unreal Engine, and conducted experiments with users.
+											The thesis concluded that mixed reality seemed to elicit less severe cybersickness.
 										</p>
 									</div>
 								</div>
@@ -89,14 +90,14 @@
 								</div>
 								<p>
 									My pre-study detailed background on cybersickness, related work, and how I would go about developing the flight simulator.
-									Previous research had indicated that a mixed reality (MR), with a lower amount of virtual environment, would elicit milder cybersickness than a pure virtual reality (VR).
+									Previous research had indicated that a mixed reality (MR), with a lower amount of virtual environment, elicit less severe cybersickness than a fully virtual reality (VR).
 									I would, therefore, develop a VR version and a MR version and compare these. 
 								</p>
 								<p>
 									The targets to achieve boiled down to:
 									<ul>
 										<li>Develop a VR and MR flight simulator in Unreal Engine, being as realistic as possible</li>
-										<li>Determine if there is a difference in cybersickness between the two</li>
+										<li>Determine if there is a difference in cybersickness between the two through experiments on users</li>
 										
 									</ul>
 								</p>
@@ -109,10 +110,10 @@
 									This resource allowed me to swiftly incorporate realistic terrain generation via <a href="https://cesium.com">Cesium</a> and realistic flight dynamics physics using <a href="https://github.com/JSBSim-Team/jsbsim">JSBSim</a>. Although I explored <a href="https://developers.arcgis.com/unreal-engine/">ArcGIS</a> as an alternative for terrain generation, I encountered issues and ultimately opted for Cesium."
 								</p>
 								<p>
-									<div class="image fit" style="text-align: center;"><a target="_blank" href="images/master_thesis/ProofOfConceptFlightSim.gif"><img src="images/master_thesis/ProofOfConceptFlightSim.gif" alt="" />This proof of concept was quickly developed.</a></div>
+									<div class="image fit" style="text-align: center;"><a target="_blank" href="images/master_thesis/ProofOfConceptFlightSim.gif"><img src="images/master_thesis/ProofOfConceptFlightSim.gif" alt="" />A quickly developed proof-of-concept.</a></div>
 								</p>
 								<p>
-									A lot more work had to be done to make the simulator work with the Varjo XR-3 headset in VR and MR. The <a href="https://developer.varjo.com">Varjo developer documentation</a> helped a lot in this regard. They had a plugin for Unreal where a lot of their features are implemented, although their support for Unity was more extensive.
+									A lot more work had to be done to make the simulator work with the Varjo XR-3 headset. The <a href="https://developer.varjo.com">Varjo developer documentation</a> helped a lot (although their support for Unity was more extensive). They had a plugin for Unreal where a lot of their features were implemented as examples.
 									The FLSC also had a cool cockpit platform with realistic JAS 39 Gripen joysticks which I interfaced with Unreal, using the plugin <a href="https://unrealengine.com/marketplace/en-US/product/wm-input-manager">WM Input Manager</a>, since Unreal Engine could not read XINPUT data natively.
 									There were a lot of issues that was duct taped as well, which hurts as a perfectionist, but it was just a demo simulator I needed to get done quickly.
 								</p>
@@ -135,9 +136,13 @@
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 								</p>
 								<p>
-									I successfully recruited 29 participants who participated in two experimental sessions, each conducted on separate days. One session took place in virtual reality (VR), while the other occurred in mixed reality (MR).
-									One particularly noteworthy finding was that cybersickness appeared to be less severe in the MR sessions. This suggests that FLSC (and other simulation centers) should consider prioritizing the development of MR flight simulators as a means to reduce cybersickness.
+									I recruited 29 volunteers who participated in two experimental sessions, each conducted on separate days. One session took place in virtual reality (VR), while the other occurred in mixed reality (MR).
+									A particularly noteworthy finding was that cybersickness appeared to be less severe in the MR sessions. This suggests that FLSC (and other simulation centers) should consider prioritizing the development of MR flight simulators as a means to reduce cybersickness.
 									The final report received positive feedback from both FLSC researchers and individuals at my university who had the opportunity to review it.
+								</p>
+								<p>
+									<iframe src="https://drive.google.com/file/d/1EESU6q-ffB7HXapQF1sxcK_yKgL2bFkN/preview" width="100%" height="600" allow="autoplay"></iframe>
+									<b>(<a href="docs/MasterThesis_ChristianKKLindberg_2023.pdf">You can download the pdf [here]</a>.)</b>
 								</p>
 								<div style="text-align: center;">
 									<h2>Reflection</h2>
@@ -148,7 +153,7 @@
 								<p>
 									I exceeded the intended duration of 20 weeks by approximately 5 weeks, even though I was consistently working more than 40 hours per week. Reflecting on the project, one aspect I would reconsider is the experiment procedure.
 									Originally, I structured it in a way that required me to handle multiple simultaneous tasks and a significant amount of manual work. This approach made conducting the sessions incredibly demanding and prolonged the process beyond the intended timeline.
-									Doing it again, I would aim to streamline and automate processes to enhance efficiency. Even if it initially would take a bit more of my time.
+									Doing it again, I would aim to streamline and automate processes to enhance efficiency. Even if it initially would require a bit more of my time.
 								</p>
 
 								<hr />
